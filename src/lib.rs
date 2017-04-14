@@ -115,7 +115,8 @@ use std::result;
 pub mod backend;
 
 #[cfg(target_os = "macos")]
-#[path = "imp/security_framework.rs"]
+//#[path = "imp/security_framework.rs"]
+#[path = "imp/openssl.rs"]
 mod imp;
 #[cfg(target_os = "windows")]
 #[path = "imp/schannel.rs"]
